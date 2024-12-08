@@ -1,6 +1,6 @@
 import React from "react";
 
-interface AboutProps {
+type AboutProps = {
   title: string;
   description: string;
 }

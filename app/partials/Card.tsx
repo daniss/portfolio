@@ -5,16 +5,16 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 
-interface SocialLinks {
-	github: string;
-	linkedin: string;
-	email: string;
+type SocialLinks = {
+	github: string
+	linkedin: string
+	email: string
 }
 
-interface CardProps {
-  name: string;
-  title: string;
-  social: SocialLinks;
+type CardProps = {
+  name: string
+  title: string
+  social: SocialLinks
 }
 
 export default function Card({ name, title, social: { github, linkedin, email } }: CardProps) {
